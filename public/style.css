@@ -1,0 +1,105 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+   
+    background-color: rgb(137, 67, 194);
+    padding: 20px;
+    justify-content:left;
+    font-size: 17px;
+}
+/* .float_right{
+    float: right;
+} */
+.mobie-menu-btn{
+    display: none;
+    font-size: 20px;
+    background: none;
+    float: right;
+    cursor: pointer;
+}
+.contact{
+    text-align: center;
+}
+
+input, textarea, button {
+    margin-top: 20px;
+    display: block;
+    margin-bottom: 15px;
+    width:200px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.cart {
+    width: 600px;
+    height: 400px; 
+    
+    /* overflow: hidden; */
+}
+
+.cart img{
+    height:350px;
+    width: 600px;
+}
+
+.row{
+    width:100%;
+    background-color:rgb(201, 209, 221) ;
+    display:flex ;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.three-row{
+    color: black;
+}
+.btn{
+    /* float: right; */
+    padding-right: 10px;
+    border-color: black;
+    color: black;
+}
+.right{
+    float: right;
+    padding-right: 50px;
+}
+
+@media screen and (max-width : 768px) {
+    .col-2{
+        width: 50%;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .cart img{
+        height:50%;
+        width: 50%;
+        text-align: center;
+    }
+    .cart{
+        order: 2;
+    }
+    .drop-button a{
+        display: none;
+    }
+    .mobie-menu-btn{
+        display: block;
+    }
+    .drop-button{
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-center{
+        text-align: center;
+    }
+    .text-primary{
+        color: rgb(170, 53, 53);
+    }
+
+}
+
